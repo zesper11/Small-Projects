@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="setTimeout(buttonPressed , 3000)">Click Me :)
+    </button>
+    <h1>
+        the text will change after 3 seconds of the button being clicked
+    </h1>
+    <script>
+        const heading = document.querySelector("h1");
+        function buttonPressed(){
+            heading.textContent = "i was clicked 3 seconds ago :)"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function closerFunction(){
+            const myName = "Rohan";
+            // iit could have be var let const anything
+            function namePrinter(){
+                console.log(myName);
+            }
+            namePrinter();
+        }
+        // A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives a function access to its outer scope. In JavaScript, closures are created every time a function is created, at function creation time.
+
+        if (Math.random() > 0.5) {
+        let x = 1;
+        } else {
+        let x = 2;
+        }
+        //this will cause an error cause we are accsing the variable that is created inside a block means we can olny use it inside a blox not ouside the given block
+            console.log(x);
+
+
+        closerFunction();
+    </script>
+</body>
+</html>
